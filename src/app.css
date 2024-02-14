@@ -15,7 +15,23 @@ html{
     left: -0.5%;
     top: -0.1%;
 
-
     overflow: hidden;
     background-color: #080808;
+}
+main {
+    display: grid;
+    position: absolute;
+    height: 100%;
+    width: 98.98%;
+    margin: 1%;
+    border-radius: 2%;
+    left: -0.5%;
+    top: -2%;
+
+}
+.ol-layer {
+    /* filter:  sepia(30%) brightness(60%) contrast(200%);*/
+    filter: contrast(130%) brightness(130%) saturate(300%) ;
+    border-radius: 2%;
+
 }

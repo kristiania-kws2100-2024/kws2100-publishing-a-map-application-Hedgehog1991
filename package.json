@@ -1,13 +1,16 @@
 {
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.2.1"
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "^4.2.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12"
   },
   "dependencies": {
     "husky": "^9.0.11",
     "ol": "^8.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "typescript": "^5.3.3",
     "vite": "^5.1.2"
   },
   "scripts": {
@@ -15,4 +18,3 @@
     "build": "vite build"
   }
 }
-

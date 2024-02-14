@@ -1,0 +1,21 @@
+html{
+    position: relative;
+    height: 100%;
+
+    overflow: hidden;
+    font-family: "AnonymicePro Nerd Font Propo";
+    background-color: darkred;
+}
+
+
+#root {
+    position: absolute;
+    height: 100.1%;
+    width: 100.8%;
+    left: -0.5%;
+    top: -0.1%;
+
+
+    overflow: hidden;
+    background-color: #080808;
+}

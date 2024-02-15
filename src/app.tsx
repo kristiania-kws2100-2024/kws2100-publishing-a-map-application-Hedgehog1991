@@ -6,6 +6,7 @@ import {Layer} from "ol/layer";
 import TileLayer from "ol/layer/Tile";
 import {StadiaMaps} from "ol/source";
 import {map, BaseMap} from "./components/BaseMap";
+import {DistrictDefenseCheckbox} from "./modules/forsvarsdistrikter/DistrictDefenseCheckbox";
 
 export function Application(){
 
@@ -13,7 +14,7 @@ export function Application(){
         // new TileLayer({ source: new OSM() }),
         new TileLayer({
             source: new StadiaMaps({
-                //Add API KEY AFTER REGISTER AT STADIAMAPS
+                //https://client.stadiamaps.com/
                 layer: "alidade_smooth_dark", apiKey:"69dfeec6-dedf-4d6d-8344-154bbd2724d9",
                 retina: true,
             }),
@@ -35,11 +36,13 @@ export function Application(){
 
     return(
         <BaseMap.Provider value={{ map, layers, setLayers }}>
-            <header>--Hello--</header>
-
+            <header></header>
+            <nav>
+                <DistrictDefenseCheckbox/>
+            </nav>
             <main className={"mainback"}>
                 <div ref={mapRef}></div>
             </main>
         </BaseMap.Provider>
-    )
+    );
 }

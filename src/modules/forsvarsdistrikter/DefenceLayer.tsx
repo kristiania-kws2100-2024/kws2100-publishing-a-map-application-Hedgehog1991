@@ -27,10 +27,10 @@ export const DefenceLayer = new VectorLayer({
     }),
     style: new Style({
         fill: new Fill({
-            color: "rgba(200,206,100,0.1)"
+            color: "rgba(103,107,76,0.06)"
         }),
             stroke: new Stroke({
-        color: "green",
+        color: "rgb(141,90,0)", width: 3
     })
 })
 })

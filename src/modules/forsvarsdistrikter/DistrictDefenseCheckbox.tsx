@@ -76,7 +76,7 @@ function districtClick(e: MapBrowserEvent<MouseEvent>){
                   }
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ color: 'orange', textDecoration: 'underline' }}
+                  style={{ color: 'orange', textDecoration: 'underline', fontSize: 'small'}}
                 >
                   visit District
                 </a>

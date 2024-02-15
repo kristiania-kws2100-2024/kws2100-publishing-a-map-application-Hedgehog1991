@@ -32,9 +32,9 @@ main {
     border-width: 2px;
     text-align: center;
     background-color: #242424;
-    font-size: large;
+    font-size:initial;
     color: #2dc316;
-    left: 50%;
+
 
 }
 

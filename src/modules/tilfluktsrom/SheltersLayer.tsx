@@ -8,7 +8,7 @@ import {Fill, RegularShape, Stroke, Style, Text} from "ol/style";
 
 export const sheltersLayer = new VectorLayer({
     source: new VectorSource({
-        url: "./public/fluktsrom.json",
+        url: "./fluktsrom.json",
         format: new GeoJSON(),
     }),
     style: shelterStyle,

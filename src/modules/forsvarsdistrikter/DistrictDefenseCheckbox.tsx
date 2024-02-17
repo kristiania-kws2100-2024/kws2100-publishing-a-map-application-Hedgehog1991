@@ -1,14 +1,16 @@
 import React, {MutableRefObject, useContext, useEffect, useMemo, useRef, useState} from "react";
 import {map, BaseMap} from "../../components/BaseMap";
 import {MapBrowserEvent, Overlay} from "ol";
-import {DefenceFeature, DefenceLayer, DefenceProperties} from "./DefenceLayer";
+import {DefenceFeature, DefenceLayer, DefenceProperties, selectedStyle} from "./DefenceLayer";
 import VectorSource from "ol/source/Vector";
 import {offset} from "ol/sphere";
+import {useFeatures} from "../../components/useFeature";
 
 
 export function DistrictDefenseCheckbox(){
 const {setLayers} = useContext(BaseMap);
 const [checked, setChecked] = useState(false);
+
 
 const overlay = useMemo(()=> new Overlay({}), []);
 const overlayRef = useRef() as MutableRefObject<HTMLDivElement>;
@@ -53,9 +55,21 @@ function districtClick(e: MapBrowserEvent<MouseEvent>){
         };
     }, [checked]);
 
+//Simple color change jesus fucking christ
+const {
+    activeFeatures,
+    setActiveFeature
+} = useFeatures<DefenceFeature>((l) => l.getClassName() === "Sivilforsvarsdistrikter")
+    useEffect(() => {
+        activeFeatures?.setStyle(selectedStyle);
+
+        return () => activeFeatures?.setStyle(undefined);
+    }, [activeFeatures]);
+
+
 
     return (
-      <div>
+      <div onMouseLeave={() => setActiveFeature(undefined)}>
         <label>
           <input
             type="checkbox"
@@ -64,7 +78,8 @@ function districtClick(e: MapBrowserEvent<MouseEvent>){
           />
           {checked ? "Hide" : "Display"} Defence Districts
         </label>
-        <div ref={overlayRef} className={"district-overlay"}>
+        <div  onMouseEnter={() => activeFeatures}
+              ref={overlayRef} className={"district-overlay"}>
           {selectedDistrict && (
             <>
               {(selectedDistrict.getProperties() as DefenceProperties).navn}

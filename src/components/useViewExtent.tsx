@@ -1,5 +1,5 @@
 import { useContext, useEffect, useMemo, useState } from "react";
-import "./mapContext"
+import "./BaseMap"
 import {BaseMap} from "./BaseMap";
 
 

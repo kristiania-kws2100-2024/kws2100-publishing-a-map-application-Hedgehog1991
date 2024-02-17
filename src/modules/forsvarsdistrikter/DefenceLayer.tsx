@@ -6,6 +6,8 @@ import { Feature, MapBrowserEvent } from "ol";
 import { Polygon } from "ol/geom";
 import "../../../public/Sivilforsvarsdistrikter.json";
 import { Fill, Stroke, Style } from "ol/style";
+import React, {useContext, useEffect} from "react";
+import {BaseMap} from "../../components/BaseMap";
 
 export type defenceLayer = VectorLayer<VectorSource<DefenceFeature>>
 
@@ -34,3 +36,14 @@ export const DefenceLayer = new VectorLayer({
     })
 })
 })
+
+
+export const selectedStyle = new Style({
+    stroke: new Stroke({
+        color: "black",
+        width: 3,
+    }),
+    fill: new Fill({
+        color: [0,0,0,0.1],
+    }),
+});

@@ -5,62 +5,61 @@ import {Feature} from "ol";
 import {Point} from "ol/geom";
 import {FeatureLike} from "ol/Feature";
 import {Fill, RegularShape, Stroke, Style, Text} from "ol/style";
-import {offset} from "ol/sphere";
-
 
 export const sheltersLayer = new VectorLayer({
     source: new VectorSource({
-        url: "../../../public/Offentligetilfluktsrom.json",
+        url: "./public/fluktsrom.json",
         format: new GeoJSON(),
     }),
     style: shelterStyle,
 });
 
-type ShelterProps = {
-    "romnr": number,
-    "plasser": number,
-    "adresse": string
+export interface ShelterProps {
+    adresse: string;
+    plasser: number;
+    romnr: number;
 };
 
-type ShelterFeature = { getProperties(): ShelterProps} & Feature<Point>;
-
-
-export function shelterStyle(f: FeatureLike) {
+export type ShelterFeature = { getProperties(): ShelterProps } & Feature<Point>;function shelterStyle(f: FeatureLike) {
     const feature = f as ShelterFeature;
     const shelter = feature.getProperties();
-
     return new Style({
         image: new RegularShape({
-            stroke: new Stroke({color: "black", width: 2}),
+            stroke: new Stroke({ color: "black", width: 2 }),
             fill: new Fill({
                 color: "yellow",
             }),
             points: 4,
-            angle: 90,
-            radius2: 3 + shelter.plasser / 10,
-        })
-    })
+            angle: 0,
+            radius: 10 + shelter.plasser / 1000,
+            rotation: 4
+        }),
+    });
 }
 
-export function activeShelterStyle(f: FeatureLike, resolution: number){
+export function activeShelterStyle(f: FeatureLike, resolution: number) {
     const feature = f as ShelterFeature;
     const shelter = feature.getProperties();
     return new Style({
         image: new RegularShape({
-            stroke: new Stroke({ color: "black", width: 3}),
+            stroke: new Stroke({ color: "darkgreen", width: 3 }),
             fill: new Fill({
-                color: "yellow",
+                color: "black",
             }),
-            points: 3,
-            angle: 40,
-            radius: 3 + shelter.plasser % 10
+            points: 4,
+            angle: 90,
+            radius: 10 + shelter.plasser / 900,
         }),
         text:
-            resolution < 300 ? new Text({text: shelter.adresse,
-        offsetY: -18,
-        font: "bold 22px sans-serif",
-        fill: new Fill({color: "black"}),
-        stroke: new Stroke({color: "yellow", width: 2}),
-        }) : undefined,
+            resolution < 450
+                ? new Text({
+                    text: shelter.adresse,
+
+                    offsetY: -90,
+                    font: "bold 22px sans-serif",
+                    fill: new Fill({ color: "black" }),
+                    stroke: new Stroke({ color: "orange", width: 2 }),
+                })
+                : undefined,
     });
 }

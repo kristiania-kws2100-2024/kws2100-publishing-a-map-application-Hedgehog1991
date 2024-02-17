@@ -8,10 +8,10 @@ html{
 
 #root{
     position: absolute;
-    height: 100.1%;
+    height: 100.5%;
     width: 100.8%;
-    left: -0.5%;
-    top: -0.1%;
+    left: -0.6%;
+    top: 0.1%;
     overflow: hidden;
     background-color: #080808;
 }
@@ -61,4 +61,78 @@ nav{
 div.ol-zoom.ol-unselectable.ol-control{
     position: absolute;
     top: 92%;
+}
+
+.ol-viewport{
+    border-style: solid;
+    border-color: saddlebrown;
+    border-width: 2px;
+    border-radius: 1%;
+}
+div.ol-attribution{
+    visibility: hidden;
+    z-index: -3;
+
+}
+.ol-rotate-reset{
+    visibility: hidden;
+    z-index: -3;
+}
+
+.searchShelter{
+    position: absolute;
+    left: 1%;
+    width: 12.5%;
+    top: 5%;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.searchStation{
+    position: absolute;
+    left: 1%;
+    width: 12.5%;
+    top: 5%;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.search-container {
+    flex-direction: column;
+    color: #00ff15;
+
+}
+button{
+    color: #00ff15;
+    background-color: #080808;
+    font-family: "AnonymicePro Nerd Font Propo";
+}
+.searchinput{
+    background-color: #242424;
+    color: #00ff15;
+
+}
+.dropdown {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+
+
+}
+
+.dropdown:empty {
+    border: none;
+}
+
+.dropdown-row {
+    cursor:pointer;
+    text-align: start;
+    margin: 2px 0;
+    color: #00ff15;
+
+}
+
+.search-inner {
+    display: flex;
 }

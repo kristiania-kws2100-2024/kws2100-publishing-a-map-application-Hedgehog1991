@@ -7,6 +7,11 @@ import TileLayer from "ol/layer/Tile";
 import {StadiaMaps} from "ol/source";
 import {map, BaseMap} from "./components/BaseMap";
 import {DistrictDefenseCheckbox} from "./modules/forsvarsdistrikter/DistrictDefenseCheckbox";
+import {SheltersCheckbox} from "./modules/tilfluktsrom/SheltersCheckbox";
+import {SearchShelter} from "./modules/tilfluktsrom/findShelter";
+
+
+
 
 export function Application(){
 
@@ -37,8 +42,11 @@ export function Application(){
     return(
         <BaseMap.Provider value={{ map, layers, setLayers }}>
             <header></header>
+            <SearchShelter/>
+
             <nav>
                 <DistrictDefenseCheckbox/>
+                <SheltersCheckbox/>
             </nav>
             <main className={"mainback"}>
                 <div ref={mapRef}></div>

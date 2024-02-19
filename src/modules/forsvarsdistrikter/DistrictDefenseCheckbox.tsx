@@ -8,7 +8,7 @@ import {useFeatures} from "../../components/useFeature";
 
 
 export function DistrictDefenseCheckbox(){
-const {setLayers} = useContext(BaseMap);
+const {setFeatureLayers} = useContext(BaseMap);
 const [checked, setChecked] = useState(false);
 
 
@@ -46,11 +46,11 @@ function districtClick(e: MapBrowserEvent<MouseEvent>){
 }
     useEffect(() => {
         if (checked) {
-            setLayers((old) => [...old, DefenceLayer]);
+            setFeatureLayers((old) => [...old, DefenceLayer]);
            map.on("click", districtClick);
         }
         return () => {
-            setLayers((old) => old.filter((l) => l !== DefenceLayer));
+            setFeatureLayers((old) => old.filter((l) => l !== DefenceLayer));
           map.un("click", districtClick);
         };
     }, [checked]);

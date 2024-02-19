@@ -38,6 +38,18 @@ main {
 
 }
 
+
+label{
+    color: #00ff15;
+}
+
+option{
+    color: green;
+}
+select{
+    color:green;
+    background-color: #171919;
+}
 nav{
     gap: 5em;
     color: blue;
@@ -45,9 +57,10 @@ nav{
     border-color: #667f61;
     border-style: solid;
     position: relative;
-    left: 89%;
-    height: 10%;
-    width: 9%;
+    left: 13.5%;
+    height: auto;
+    top: 1%;
+    width: 13%;
     z-index: 1;
     background-color: #242424;
 }
@@ -55,7 +68,7 @@ nav{
 
 .ol-layer {
     /* filter:  sepia(30%) brightness(60%) contrast(200%);*/
-    filter: contrast(130%) brightness(130%) saturate(300%) ;
+    filter: contrast(130%) brightness(100%) saturate(280%) ;
     border-radius: 2%;
 }
 div.ol-zoom.ol-unselectable.ol-control{
@@ -82,34 +95,46 @@ div.ol-attribution{
 .searchShelter{
     position: absolute;
     left: 1%;
-    width: 12.5%;
-    top: 5%;
-    overflow: hidden;
-    z-index: 2;
+   width: 12%;
+    top: 1%;
+    overflow: visible;
+    z-index: 1;
+    background-color: #242424;
+    border-width: 2px;
+    border-color: #242424;
+    border-style: solid;
+    border-radius: 1%;
+
+
 }
 
-.searchStation{
-    position: absolute;
-    left: 1%;
-    width: 12.5%;
-    top: 5%;
-    overflow: hidden;
-    z-index: 2;
-}
 
 .search-container {
     flex-direction: column;
     color: #00ff15;
+    margin: 1%
+
 
 }
-button{
+
+.ol-scale-line-inner{
+    color: green;
+
+}
+
+/*button{
     color: #00ff15;
     background-color: #080808;
     font-family: "AnonymicePro Nerd Font Propo";
-}
+}*/
 .searchinput{
-    background-color: #242424;
+    background-color: black;
     color: #00ff15;
+    width: 96.4%;
+
+
+
+
 
 }
 .dropdown {
@@ -117,6 +142,8 @@ button{
     display: flex;
     flex-direction: column;
     border: 1px solid grey;
+    width: auto;
+
 
 
 }
@@ -133,6 +160,24 @@ button{
 
 }
 
-.search-inner {
+search-inner {
     display: flex;
+
+
+
 }
+
+.mapSelector{
+    position: absolute;
+    left: 27%;
+    top: 1.1%;
+    z-index: 3;
+    background-color: #242424;
+    width: auto;
+    border-width: 2px;
+    border-color: #242424;
+    border-style: solid;
+
+
+}
+

@@ -12,13 +12,13 @@ export function useFeatures<T extends Feature>(
 ){
 
 
-    const { layers, map } = useContext(BaseMap);
+    const { featureLayers, map } = useContext(BaseMap);
     const viewExtent = useViewExtent();
 
 
     const layer = useMemo(
-        () => layers.find(layerPredicate) as VectorLayer<any>,
-        [layers, layerPredicate],
+        () => featureLayers.find(layerPredicate) as VectorLayer<any>,
+        [featureLayers, layerPredicate],
     );
 
 //State management

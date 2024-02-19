@@ -20,11 +20,11 @@ export function SearchShelter() {
     const [shelterNames, setShelterNames] = useState<string[]>([]);
     const [shelters, setShelters] = useState<ShelterJson[]>([]);
 
-    const { map, layers } = useContext(BaseMap);
+    const { map, featureLayers } = useContext(BaseMap);
 
     const shelterLayer = useMemo(
-        () => layers.find((l) => l.getClassName() === "shelter"),
-        [layers]
+        () => featureLayers.find((l) => l.getClassName() === "shelter"),
+        [featureLayers]
     );
 
     useEffect(() => {
@@ -63,7 +63,7 @@ export function SearchShelter() {
     return (
         <div className="searchShelter">
             <div className="search-container">
-                <h4>Find Shelter</h4>
+                Find Shelter
                 <div className="search-inner">
                     <input
                         className={"searchinput"}
@@ -71,7 +71,7 @@ export function SearchShelter() {
                         value={value}
                         onChange={onChange}
                     />
-                    <button onClick={() => onSearch(value)}> Search </button>
+
                 </div>
                 <div className="dropdown">
                     {shelters

@@ -3,14 +3,14 @@ import { BaseMap } from "./BaseMap";
 import { Layer } from "ol/layer";
 
 export function useLayer(layer: Layer, checked: boolean) {
-    const { setLayers } = useContext(BaseMap);
+    const { setFeatureLayers } = useContext(BaseMap);
 
     useEffect(() => {
         if (checked) {
-            setLayers((old) => [...old, layer]);
+            setFeatureLayers((old) => [...old, layer]);
         }
         return () => {
-            setLayers((old) => old.filter((l) => l !== layer));
+            setFeatureLayers((old) => old.filter((l) => l !== layer));
         };
     }, [checked]);
 }

@@ -3,7 +3,11 @@ import React, { Dispatch, SetStateAction } from "react";
 import { Layer } from "ol/layer";
 import { useGeographic } from "ol/proj";
 
-useGeographic();
+
+import {defaults, ScaleLine} from "ol/control";
+import {extend} from "ol/array";
+
+useGeographic()
 
 //Values associated with the initial render of the webpage.
 export const map = new Map({
@@ -11,16 +15,19 @@ export const map = new Map({
         center: [10, 61],
         zoom: 7,
     }),
+    controls: defaults().extend([new ScaleLine()])
 });
 
 //set the rules for what is displayed in the return part of the application.
 //Base for most of the other inputs.
 export const BaseMap = React.createContext<{
     map: Map;
-    layers: Layer[];
-    setLayers: Dispatch<SetStateAction<Layer[]>>;
+    setBaseLayer: (layer: Layer) => void;
+    setFeatureLayers: Dispatch<SetStateAction<Layer[]>>;
+    featureLayers: Layer[];
 }>({
     map,
-    layers: [],
-    setLayers: () => {},
+    setBaseLayer: () => {},
+    setFeatureLayers: () => {},
+    featureLayers: [],
 });

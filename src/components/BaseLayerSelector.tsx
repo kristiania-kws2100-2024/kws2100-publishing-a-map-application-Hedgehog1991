@@ -82,7 +82,7 @@ export function BaseLayerSelector() {
             },
             stadia: {
                 name: "Stadia",
-                layer: new TileLayer({ source: new StadiaMaps({ layer: "outdoors" }) }),
+                layer: new TileLayer({ source: new StadiaMaps({ layer: "outdoors", apiKey:"69dfeec6-dedf-4d6d-8344-154bbd2724d9" }) }),
             },
             dark: {
                 name: "Stadia (dark)",

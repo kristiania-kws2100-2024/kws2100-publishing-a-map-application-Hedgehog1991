@@ -56,11 +56,11 @@ nav{
     border-width: 2px;
     border-color: #667f61;
     border-style: solid;
-    position: relative;
-    left: 13.5%;
+    position: absolute;
+    left: 15.5%;
     height: auto;
     top: 1%;
-    width: 13%;
+
     z-index: 1;
     background-color: #242424;
 }
@@ -95,9 +95,9 @@ div.ol-attribution{
 .searchShelter{
     position: absolute;
     left: 1%;
-   width: 12%;
+   width: 14%;
     top: 1%;
-    overflow: visible;
+    overflow: hidden;
     z-index: 1;
     background-color: #242424;
     border-width: 2px;
@@ -169,7 +169,7 @@ search-inner {
 
 .mapSelector{
     position: absolute;
-    left: 27%;
+    left: 75%;
     top: 1.1%;
     z-index: 3;
     background-color: #242424;

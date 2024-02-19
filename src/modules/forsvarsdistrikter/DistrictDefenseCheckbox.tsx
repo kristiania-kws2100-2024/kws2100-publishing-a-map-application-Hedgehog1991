@@ -76,7 +76,7 @@ const {
             checked={checked}
             onChange={(e) => setChecked(e.target.checked)}
           />
-          {checked ? "Hide" : "Display"} Defence Districts
+          Defence Districts
         </label>
         <div  onMouseEnter={() => activeFeatures}
               ref={overlayRef} className={"district-overlay"}>

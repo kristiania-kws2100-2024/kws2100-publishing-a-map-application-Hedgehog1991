@@ -53,7 +53,8 @@ export function SheltersCheckbox() {
         />
         Shelters
         {activeFeature &&
-          " (" + activeFeature.getProperties().adresse + ") "}
+          " Space:" + activeFeature.getProperties().plasser }
+
       </label>
     </div>
   );

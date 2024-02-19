@@ -4,7 +4,8 @@ import {GeoJSON} from "ol/format";
 import {Feature} from "ol";
 import {Point} from "ol/geom";
 import {FeatureLike} from "ol/Feature";
-import {Fill, RegularShape, Stroke, Style, Text} from "ol/style";
+import { Fill, RegularShape, Stroke, Style, Text } from "ol/style";
+import React from "react";
 
 export const sheltersLayer = new VectorLayer({
     source: new VectorSource({
@@ -31,7 +32,7 @@ export type ShelterFeature = { getProperties(): ShelterProps } & Feature<Point>;
             }),
             points: 4,
             angle: 0,
-            radius: 10 + shelter.plasser / 1000,
+            radius: 10 + shelter.plasser / 700,
             rotation: 4
         }),
     });
@@ -48,17 +49,17 @@ export function activeShelterStyle(f: FeatureLike, resolution: number) {
             }),
             points: 4,
             angle: 90,
-            radius: 10 + shelter.plasser / 900,
+            radius: 10 + shelter.plasser / 700,
         }),
         text:
             resolution < 450
                 ? new Text({
-                    text: shelter.adresse,
+                    text: shelter.adresse + "\n Available Space: " + shelter.plasser.toString() ,
 
                     offsetY: -90,
-                    font: "bold 22px sans-serif",
-                    fill: new Fill({ color: "black" }),
-                    stroke: new Stroke({ color: "orange", width: 2 }),
+                    font: " 20px AnonymicePro Nerd Font Propo",
+                    fill: new Fill({ color: "yellow" }),
+                    stroke: new Stroke({ color: "black", width: 2 }),
                 })
                 : undefined,
     });

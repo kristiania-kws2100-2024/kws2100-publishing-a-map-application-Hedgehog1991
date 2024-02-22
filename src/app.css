@@ -119,6 +119,19 @@ div.ol-attribution{
 
 .ol-scale-line-inner{
     color: green;
+    font-size: large;
+    border-width: 2px;
+    border-color: #242424;
+
+    border-style: solid;
+    border-radius: 90%;
+    text-align: center;
+    height: fit-content;
+    padding: 5px;
+    background-color: rgba(36, 36, 36, 0.61);
+    left: 82%;
+    top: 92%;
+    position: absolute;
 
 }
 

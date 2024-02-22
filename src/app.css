@@ -181,3 +181,14 @@ search-inner {
 
 }
 
+.row{
+    z-index: 2;
+    position: absolute;
+    top: 1%;
+    left: 40%;
+    width: fit-content;
+    background-color: #171919;
+    border-width: 2px;
+    border-color: #242424;
+    border-style: solid;
+}

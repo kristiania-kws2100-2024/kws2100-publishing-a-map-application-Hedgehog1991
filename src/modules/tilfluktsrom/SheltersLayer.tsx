@@ -52,7 +52,7 @@ export function activeShelterStyle(f: FeatureLike, resolution: number) {
             radius: 10 + shelter.plasser / 700,
         }),
         text:
-            resolution < 450
+            resolution < 550
                 ? new Text({
                     text: shelter.adresse + "\n Available Space: " + shelter.plasser.toString() ,
 

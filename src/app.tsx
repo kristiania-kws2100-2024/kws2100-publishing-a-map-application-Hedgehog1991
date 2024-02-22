@@ -10,6 +10,7 @@ import {DistrictDefenseCheckbox} from "./modules/forsvarsdistrikter/DistrictDefe
 import {SheltersCheckbox} from "./modules/tilfluktsrom/SheltersCheckbox";
 import {SearchShelter} from "./modules/tilfluktsrom/findShelter";
 import {BaseLayerSelector} from "./components/BaseLayerSelector";
+import {DrawComponent} from "./components/MapComponent";
 
 
 
@@ -77,8 +78,8 @@ export function Application(){
         <BaseMap.Provider value={{ map,featureLayers, setFeatureLayers, setBaseLayer }}>
             <header></header>
             <SearchShelter/>
-
                 <BaseLayerSelector/>
+            <DrawComponent/>
             <nav>
                 <DistrictDefenseCheckbox/>
                 <SheltersCheckbox/>

@@ -1,15 +1,18 @@
 import React, { useEffect, useRef, useContext } from 'react';
 import Draw from 'ol/interaction/Draw';
 import { Vector as VectorSource } from 'ol/source';
-import { Geometry } from 'ol/geom';
 import { BaseMap } from './BaseMap';
 import { useLayer } from './useLayer';
 import VectorLayer from 'ol/layer/Vector';
 import {GeometryType} from "ol/render/webgl/MixedGeometryBatch";
-import {State} from "ol/View";
+
+
+// reference code.
+// https://openlayers.org/en/latest/examples/draw-features.html
+
+
 
 // type GeometryOptions = 'Point' | 'LineString' | 'Polygon' | 'Circle' | 'None';
-
 export const DrawComponent: React.FC = () => {
 
     const { map } = useContext(BaseMap);

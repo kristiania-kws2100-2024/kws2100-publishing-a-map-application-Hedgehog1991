@@ -63,7 +63,7 @@ export function SearchShelter() {
     return (
         <div className="searchShelter">
             <div className="search-container">
-                Find Shelter
+                Find Shelter(Click address)
                 <div className="search-inner">
                     <input
                         className={"searchinput"}

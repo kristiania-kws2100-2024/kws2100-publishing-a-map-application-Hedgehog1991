@@ -49,16 +49,16 @@ export function activeShelterStyle(f: FeatureLike, resolution: number) {
             }),
             points: 4,
             angle: 90,
-            radius: 10 + shelter.plasser / 650,
+            radius: 10 + shelter.plasser / 700,
         }),
         text:
-            resolution < 600
+            resolution < 800
                 ? new Text({
                     text: shelter.adresse + "\n Available Space: " + shelter.plasser.toString() ,
 
-                    offsetY: -80,
+                    offsetY: -70,
                     font: " 18px AnonymicePro Nerd Font Propo",
-                    fill: new Fill({ color: "yellow" }),
+                    fill: new Fill({ color: "orange" }),
                     stroke: new Stroke({ color: "black", width: 2 }),
                 })
                 : undefined,

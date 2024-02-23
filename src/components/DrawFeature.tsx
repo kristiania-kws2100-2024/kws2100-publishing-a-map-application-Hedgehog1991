@@ -12,8 +12,8 @@ import {GeometryType} from "ol/render/webgl/MixedGeometryBatch";
 
 
 
-// type GeometryOptions = 'Point' | 'LineString' | 'Polygon' | 'Circle' | 'None';
-export const DrawComponent: React.FC = () => {
+type GeometryOptions = 'Point' | 'LineString' | 'Polygon' | 'Circle' | 'Disabled';
+export function DrawFeature()  {
 
     const { map } = useContext(BaseMap);
 
@@ -24,9 +24,11 @@ export const DrawComponent: React.FC = () => {
 
     useLayer(vectorLayer, true);
 
-    let draw: Draw; // global so we can remove it later
-    const addInteraction = (type: String) => {
-        if (type !== 'None') {
+
+    useEffect(() => {
+    let draw: Draw;
+    const addInteraction = (type: GeometryOptions) => {
+        if (type !== 'Disabled') {
             draw = new Draw({
                 source: source,
                 type: type as GeometryType,
@@ -34,20 +36,18 @@ export const DrawComponent: React.FC = () => {
             map.addInteraction(draw);
         }
     };
-
-    useEffect(() => {
         if (typeSelect.current && undoButton.current) {
             typeSelect.current.onchange = () => {
                 map.removeInteraction(draw);
                 if (typeSelect.current) {
-                    addInteraction(typeSelect.current.value);
+                    addInteraction(typeSelect.current.value as GeometryOptions);
                 }
             };
           undoButton.current.addEventListener('click', () => { source.clear()
           });
 
             if (typeSelect.current) {
-                addInteraction(typeSelect.current.value);
+                addInteraction(typeSelect.current.value as GeometryOptions);
             }
         }
     }, []);
@@ -57,15 +57,15 @@ export const DrawComponent: React.FC = () => {
             <div className="row">
                 <div className="col-auto">
           <span className="input-group">
-            <label className="input-group-text" htmlFor="type">Geometry type:</label>
+            <label className="input-group-text" htmlFor="type">Draw Map:</label>
             <select className="form-select" id="type" ref={typeSelect}>
-              <option value="None">Disabled</option>
+              <option value="Disabled">Disabled</option>
               <option value="Point">Point</option>
               <option value="LineString">LineString</option>
               <option value="Polygon">Polygon</option>
               <option value="Circle">Circle</option>
             </select>
-            <input className="form-control" type="button" value="Undo" id="undo" ref={undoButton} />
+            <input className="form-control" type="button" value="Undo" id="undo" ref={undoButton}/>
           </span>
                 </div>
             </div>

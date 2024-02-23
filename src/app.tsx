@@ -10,7 +10,7 @@ import {DistrictDefenseCheckbox} from "./modules/forsvarsdistrikter/DistrictDefe
 import {SheltersCheckbox} from "./modules/tilfluktsrom/SheltersCheckbox";
 import {SearchShelter} from "./modules/tilfluktsrom/findShelter";
 import {BaseLayerSelector} from "./components/BaseLayerSelector";
-import {DrawComponent} from "./components/MapComponent";
+import {DrawFeature} from "./components/DrawFeature";
 
 
 
@@ -28,6 +28,34 @@ export function Application(){
        //     }),
      //   }),
   //  ]);
+
+    function handleZoomToUser(e: React.MouseEvent) {
+        e.preventDefault();
+        navigator.geolocation.getCurrentPosition((pos) => {
+            const { latitude, longitude } = pos.coords;
+            //map is connected to the mapContext.tsx
+            map.getView().animate({
+                center: [longitude, latitude],
+                zoom: 12,
+            });
+        });
+    }
+
+    function handleZoom(
+        e: React.MouseEvent,
+        center: [number, number],
+        zoom: number,
+    ) {
+        e.preventDefault();
+        map.getView().animate({
+            center: center,
+            zoom: zoom,
+        });
+    }
+
+
+
+
 
 
     const [view, setView] = useState(new View({ center: [10, 59], zoom: 8 }));
@@ -75,11 +103,22 @@ export function Application(){
 
 
     return(
-        <BaseMap.Provider value={{ map,featureLayers, setFeatureLayers, setBaseLayer }}>
+        <BaseMap.Provider value={{map, featureLayers, setFeatureLayers, setBaseLayer}}>
             <header></header>
+            <a className={"mylocation"} href={"#"} onClick={handleZoomToUser}>
+                My Location
+            </a>
+            <a
+                className={"zoomOut"}
+                href="#"
+                onClick={(e) => handleZoom(e, [10, 61], 5)}
+            >
+                Zoom Out
+            </a>
+
             <SearchShelter/>
-                <BaseLayerSelector/>
-            <DrawComponent/>
+            <BaseLayerSelector/>
+            <DrawFeature/>
             <nav>
                 <DistrictDefenseCheckbox/>
                 <SheltersCheckbox/>
@@ -90,4 +129,4 @@ export function Application(){
             </main>
         </BaseMap.Provider>
     );
-}
+    }

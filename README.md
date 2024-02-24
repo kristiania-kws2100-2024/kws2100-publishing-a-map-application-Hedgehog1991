@@ -2,7 +2,7 @@
 # KWS2100 Assignment 1
 
 ### Click image to visit map
-[![Visit Map](./public/istock.jpg)]( https://kristiania-kws2100-2024.github.io/kws2100-publishing-a-map-application-Hedgehog1991/)
+[![Visit Map](./public/istock.png)]( https://kristiania-kws2100-2024.github.io/kws2100-publishing-a-map-application-Hedgehog1991/)
 The goal of this assignment is to verify that you're able to deploy a working web application:
 
 - [ x] Set up the project correctly to deploy React and OpenLayers with GitHub pages

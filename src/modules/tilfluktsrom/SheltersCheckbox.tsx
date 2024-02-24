@@ -41,6 +41,7 @@ export function SheltersCheckbox() {
       map?.on("click", handlePointerMove);
     }
     return () => map?.un("click", handlePointerMove);
+
   }, [checked]);
 
   return (

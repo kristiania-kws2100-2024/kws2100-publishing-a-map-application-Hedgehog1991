@@ -55,7 +55,7 @@ export function SearchShelter() {
         if (selectedShelter) {
             map.getView().animate({
                 center: selectedShelter.geometry.coordinates,
-                zoom: 12
+                zoom: 14
             });
         }
     };

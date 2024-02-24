@@ -5,6 +5,7 @@ import {DefenceFeature, DefenceLayer, DefenceProperties, selectedStyle} from "./
 import VectorSource from "ol/source/Vector";
 import {offset} from "ol/sphere";
 import {useFeatures} from "../../components/useFeature";
+import {clear} from "ol/obj";
 
 
 export function DistrictDefenseCheckbox(){
@@ -52,6 +53,7 @@ function districtClick(e: MapBrowserEvent<MouseEvent>){
         return () => {
             setFeatureLayers((old) => old.filter((l) => l !== DefenceLayer));
           map.un("click", districtClick);
+          overlay.setPosition(undefined)
         };
     }, [checked]);
 

@@ -40,10 +40,10 @@ export const DefenceLayer = new VectorLayer({
 
 export const selectedStyle = new Style({
     stroke: new Stroke({
-        color: "black",
+        color: "brown",
         width: 3,
     }),
     fill: new Fill({
-        color: [0,0,0,0.1],
+        color: [0,0,50,0.2],
     }),
 });

@@ -15,7 +15,7 @@ export function SheltersCheckbox() {
 
   function handlePointerMove(e: MapBrowserEvent<MouseEvent>) {
     const resolution = map.getView().getResolution();
-    if (!resolution || resolution > 700) {
+    if (!resolution || resolution > 800) {
       return;
     }
     const features: FeatureLike[] = [];
@@ -38,9 +38,9 @@ export function SheltersCheckbox() {
 
   useEffect(() => {
     if (checked) {
-      map?.on("pointermove", handlePointerMove);
+      map?.on("click", handlePointerMove);
     }
-    return () => map?.un("pointermove", handlePointerMove);
+    return () => map?.un("click", handlePointerMove);
   }, [checked]);
 
   return (

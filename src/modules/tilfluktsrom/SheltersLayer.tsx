@@ -32,7 +32,7 @@ export type ShelterFeature = { getProperties(): ShelterProps } & Feature<Point>;
             }),
             points: 4,
             angle: 0,
-            radius: 10 + shelter.plasser / 700,
+            radius: 10 + shelter.plasser / 750,
             rotation: 4
         }),
     });

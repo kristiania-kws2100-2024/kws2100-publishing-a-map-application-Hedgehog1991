@@ -1,0 +1,12 @@
+Feedback for kws2100-publishing-a-map-application-Hedgehog1991
+
+This is a very impressive map application. 
+You have finished all of the requierments, and also added several other maps such as stadia, polar and OSM.
+Also there is a very cool drawing function that lets the user choose between different shaps and lets the user add them to the map.
+The user can also remove these shapes afterwards. There are also two layers to choose between. 
+I also like the good details in both layers and especially the details from pressing the shelters.
+The search function to find shelters is also a cool feature.
+
+Other than that the code is is clean and well written. The only constructive critisism is that the code could have more comments.
+So that it is easier to understand what the different parts of the code does.
+Other than that, this is a very impressive map application. 

@@ -24,7 +24,7 @@ You *must* do the following correctly in your project:
 - [ x] Include verification with Prettier and Typescript in the build process
 - [ x] Avoid pushing bad commits by adding a Husky git hook
 - [ x] Include a link to their deployed GitHub Pages site
-- [ ] Receive a code review from the other part of their team
+- [ x] Receive a code review from the other part of their team
 
 ## Features
 

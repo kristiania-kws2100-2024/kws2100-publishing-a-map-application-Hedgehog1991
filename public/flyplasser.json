@@ -1,0 +1,790 @@
+{
+  "type": "FeatureCollection",
+  "name": "av_export_temp.ngokxzhe",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "KIRKENES LUFTHAVN",
+        "alt_navn": "HØYBUKTMOEN",
+        "iata": "KKN",
+        "innland": 257794,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[29.898691882825467, 69.730973355658563]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "KRISTIANSUND LUFTHAVN",
+        "alt_navn": "KVERNBERGET",
+        "iata": "KSU",
+        "innland": 244128,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[7.827499273570245, 63.112163522420047]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "NARVIK LUFTHAVN",
+        "alt_navn": "FRAMNES",
+        "iata": "NVK",
+        "innland": 0,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[17.385132519878564, 68.436750232588707]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "STOKMARKNES LUFTHAVN",
+        "alt_navn": "SKAGEN",
+        "iata": "SKN",
+        "innland": 98049,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[15.031405863043874, 68.580419448887469]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "KRISTIANSAND LUFTHAVN",
+        "alt_navn": "KJEVIK",
+        "iata": "KRS",
+        "innland": 755505,
+        "utland": 246669,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[8.083699248804196, 58.203232750963643]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "OSLO LUFTHAVN",
+        "alt_navn": "GARDERMOEN",
+        "iata": "OSL",
+        "innland": 8055422,
+        "utland": 12109330,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[11.098399564818722, 60.198622826663915]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "SANDANE LUFTHAVN",
+        "alt_navn": "ANDA",
+        "iata": "SDN",
+        "innland": 32808,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[6.106175925182534, 61.831418894019599]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "SKIEN LUFTHAVN",
+        "alt_navn": "GEITERYGGEN",
+        "iata": "SKE",
+        "innland": 0,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[9.567263684259448, 59.184116338771091]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "MOSS/RYGGE LUFTHAVN",
+        "alt_navn": null,
+        "iata": "RYG",
+        "innland": 0,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[10.783563381915, 59.377938083015366]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "VÆRØY LUFTHAVN",
+        "alt_navn": null,
+        "iata": "VRY",
+        "innland": 8684,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[12.679838659877204, 67.683506556611562]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "MOSJØEN LUFTHAVN",
+        "alt_navn": "KJÆRSTAD",
+        "iata": "MJF",
+        "innland": 63409,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[13.213924353959049, 65.78371757652026]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "RØRVIK LUFTHAVN",
+        "alt_navn": null,
+        "iata": "RVK",
+        "innland": 37387,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[11.145430193611736, 64.838387062640592]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "TRONDHEIM LUFTHAVN",
+        "alt_navn": "VÆRNES",
+        "iata": "TRD",
+        "innland": 3070713,
+        "utland": 689920,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[10.899494506724794, 63.454741092962919]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "SOGNDAL LUFTHAVN",
+        "alt_navn": "HAUKÅSEN",
+        "iata": "SOG",
+        "innland": 51879,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[7.138875048845756, 61.155297370838454]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "STAVANGER LUFTHAVN",
+        "alt_navn": "SOLA",
+        "iata": "SVG",
+        "innland": 2389958,
+        "utland": 1336165,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[5.633200545420516, 58.877438485422651]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "ÅLESUND LUFTHAVN",
+        "alt_navn": "VIGRA",
+        "iata": "AES",
+        "innland": 818736,
+        "utland": 244088,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[6.110394720007912, 62.560426631363065]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "MEHAMN LUFTHAVN",
+        "alt_navn": null,
+        "iata": "MEH",
+        "innland": 15262,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[27.815363516332912, 71.028486999440403]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "BÅTSFJORD LUFTHAVN",
+        "alt_navn": null,
+        "iata": "BJF",
+        "innland": 13894,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[29.662416871129345, 70.602055130427061]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "VADSØ LUFTHAVN",
+        "alt_navn": null,
+        "iata": "VDS",
+        "innland": 60196,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[29.844839408458466, 70.065957166573796]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "SØRKJOSEN LUFTHAVN",
+        "alt_navn": null,
+        "iata": "SOJ",
+        "innland": 12250,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[20.960030524959407, 69.785610421407327]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "LEKNES LUFTHAVN",
+        "alt_navn": null,
+        "iata": "LKN",
+        "innland": 124751,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[13.612653595098427, 68.153995552776593]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "MOLDE LUFTHAVN",
+        "alt_navn": "ÅRØ",
+        "iata": "MOL",
+        "innland": 401539,
+        "utland": 6472,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[7.270151422200713, 62.746093910019198]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "VARDØ LUFTHAVN",
+        "alt_navn": "SVARTNES",
+        "iata": "VAW",
+        "innland": 10998,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[31.045721607402491, 70.355742063967227]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "ALTA LUFTHAVN",
+        "alt_navn": null,
+        "iata": "ALF",
+        "innland": 357878,
+        "utland": 175,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[23.370690510119804, 69.976518656809745]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "ANDØYA LUFTHAVN",
+        "alt_navn": null,
+        "iata": "ANX",
+        "innland": 44594,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[16.132752742161955, 69.29903128172505]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "BARDUFOSS LUFTHAVN",
+        "alt_navn": null,
+        "iata": "BDU",
+        "innland": 240843,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[18.532408686283738, 69.056812624605129]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "BERGEN LUFTHAVN",
+        "alt_navn": "FLESLAND",
+        "iata": "BGO",
+        "innland": 3340557,
+        "utland": 2066878,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[5.219542828643378, 60.292946342091298]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "BERLEVÅG LUFTHAVN",
+        "alt_navn": null,
+        "iata": "BVG",
+        "innland": 5306,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[29.03313122010557, 70.871782487076146]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "BODØ LUFTHAVN",
+        "alt_navn": null,
+        "iata": "BOO",
+        "innland": 1194322,
+        "utland": 21566,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[14.361777324004306, 67.268889189515434]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "BRØNNØYSUND LUFTHAVN",
+        "alt_navn": "BRØNNØY",
+        "iata": "BNN",
+        "innland": 94886,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[12.217583572598022, 65.461642288446271]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "FAGERNES LUFTHAVN",
+        "alt_navn": "LEIRIN",
+        "iata": "VDB",
+        "innland": 0,
+        "utland": 1725,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[9.295263135626595, 61.009791667241899]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "FLORØ LUFTHAVN",
+        "alt_navn": null,
+        "iata": "FRO",
+        "innland": 96223,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[5.022070645143438, 61.583123801994404]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "FØRDE LUFTHAVN",
+        "alt_navn": null,
+        "iata": "FDE",
+        "innland": 80773,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[5.76013286332958, 61.391758582186775]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "HONNINGSVÅG LUFTHAVN",
+        "alt_navn": "VALAN",
+        "iata": "HVG",
+        "innland": 13342,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[25.983281076260781, 71.008780124855789]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "HAMMERFEST LUFTHAVN",
+        "alt_navn": null,
+        "iata": "HFT",
+        "innland": 107258,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[23.672937092092319, 70.680712834921763]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "HARSTAD NARVIK LUFTHAVN",
+        "alt_navn": "EVENES",
+        "iata": "EVE",
+        "innland": 698417,
+        "utland": 11658,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[16.680779034671524, 68.491816096563312]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "HASVIK  LUFTHAVN",
+        "alt_navn": null,
+        "iata": "HAA",
+        "innland": 11097,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[22.139897148565286, 70.480939392946794]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "HAUGESUND LUFTHAVN",
+        "alt_navn": "KARMØY",
+        "iata": "HAU",
+        "innland": 474395,
+        "utland": 117308,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[5.214082193324122, 59.342551514888363]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "LAKSELV LUFTHAVN",
+        "alt_navn": "BANAK",
+        "iata": "LKL",
+        "innland": 56821,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[24.965898790042111, 70.070725593807751]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "MO I RANA LUFTHAVN",
+        "alt_navn": "RØSSVOLL",
+        "iata": "MQN",
+        "innland": 105534,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[14.300491549544843, 66.364480057902881]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "NAMSOS LUFTHAVN",
+        "alt_navn": null,
+        "iata": "OSY",
+        "innland": 28697,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[11.578204349875307, 64.472315462050332]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "RØROS LUFTHAVN",
+        "alt_navn": null,
+        "iata": "RRS",
+        "innland": 24294,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[11.345655119649852, 62.577768290580771]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "RØST LUFTHAVN",
+        "alt_navn": null,
+        "iata": "RET",
+        "innland": 8299,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[12.101380400878522, 67.527017978041712]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "SANDNESSJØEN LUFTHAVN",
+        "alt_navn": "STOKKA",
+        "iata": "SSJ",
+        "innland": 63707,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[12.468597569327246, 65.960574041376233]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "SVOLVÆR LUFTHAVN",
+        "alt_navn": "HELLE",
+        "iata": "SVJ",
+        "innland": 94650,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[14.669064446880933, 68.243710764481733]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "TROMSØ LUFTHAVN",
+        "alt_navn": null,
+        "iata": "TOS",
+        "innland": 1634562,
+        "utland": 149861,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[18.915222638232713, 69.680666059751971]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "ØRSTA VOLDA LUFTHAVN",
+        "alt_navn": "HOVDEN",
+        "iata": "HOV",
+        "innland": 107710,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[6.07850629896058, 62.180909904143178]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "NOTODDEN LUFTHAVN",
+        "alt_navn": null,
+        "iata": "NTB",
+        "innland": 1990,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[9.212359552611282, 59.565653020140097]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "SANDEFJORD TORP LUFTHAVN",
+        "alt_navn": null,
+        "iata": "TRF",
+        "innland": 347859,
+        "utland": 1693565,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[10.258894219337508, 59.187130752844411]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "STORD LUFTHAVN",
+        "alt_navn": "SØRSTOKKEN",
+        "iata": "SRP",
+        "innland": 37106,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[5.339536898360032, 59.792833254150274]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "ØRLAND LUFTHAVN",
+        "alt_navn": null,
+        "iata": "OLA",
+        "innland": 19928,
+        "utland": 0,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[9.606808169441097, 63.700307664854563]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "navn": "SVALBARD LUFTHAVN",
+        "alt_navn": null,
+        "iata": "LYR",
+        "innland": 163483,
+        "utland": 811,
+        "oppdatert": "2019-01-01"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [[15.490076580973316, 78.245639598590884]]
+      }
+    }
+  ]
+}

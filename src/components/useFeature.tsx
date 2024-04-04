@@ -8,63 +8,54 @@ import VectorLayer from "ol/layer/Vector";
 // The constraint <T extends Feature> ensures that only
 // types conforming to the Feature structure can be used with the function.
 export function useFeatures<T extends Feature>(
-    layerPredicate: (layer: Layer) => boolean,
-){
+  layerPredicate: (layer: Layer) => boolean,
+) {
+  const { featureLayers, map } = useContext(BaseMap);
+  const viewExtent = useViewExtent();
 
+  const layer = useMemo(
+    () => featureLayers.find(layerPredicate) as VectorLayer<any>,
+    [featureLayers, layerPredicate],
+  );
 
-    const { featureLayers, map } = useContext(BaseMap);
-    const viewExtent = useViewExtent();
+  //State management
+  const [features, setFeatures] = useState<T[]>([]);
+  const [activeFeatures, setActiveFeature] = useState<T>();
 
+  //visibility filter
+  const visibleFeatures = useMemo(
+    () => features.filter((f) => f.getGeometry()?.intersectsExtent(viewExtent)),
+    [features, viewExtent],
+  );
 
-    const layer = useMemo(
-        () => featureLayers.find(layerPredicate) as VectorLayer<any>,
-        [featureLayers, layerPredicate],
-    );
+  // function that sets the activeFeature based on the
+  // feature under the mouse pointer coordinate on the map
+  function handlePointermove(e: MapBrowserEvent<MouseEvent>) {
+    const features = layer?.getSource().getFeaturesAtCoordinate(e.coordinate);
+    setActiveFeature(features?.length === 1 ? features[0] : undefined);
+  }
 
-//State management
-    const [features, setFeatures] = useState<T[]>([]);
-    const [activeFeatures, setActiveFeature ] = useState<T>();
-
-
-    //visibility filter
-    const visibleFeatures = useMemo(
-        () => features.filter((f) => f.getGeometry()?.intersectsExtent(viewExtent)),
-        [features, viewExtent],
-    );
-
-
-
-// function that sets the activeFeature based on the
-// feature under the mouse pointer coordinate on the map
-    function handlePointermove(e: MapBrowserEvent<MouseEvent>) {
-        const features = layer?.getSource().getFeaturesAtCoordinate(e.coordinate);
-        setActiveFeature(features?.length === 1 ? features[0] : undefined);
+  //event handler and cleanup
+  useEffect(() => {
+    if (layer) {
+      map.on("pointermove", handlePointermove);
     }
+  }, [map, layer]);
 
-    //event handler and cleanup
-    useEffect(() => {
-        if (layer) {
-            map.on("pointermove", handlePointermove)
-        }
-    }, [map, layer]);
+  //setting the feature by manipulating the potential layer by adding the feature to the layer
+  function loadFeatures() {
+    setFeatures(layer?.getSource()?.getFeatures() || []);
+  }
 
+  //Change to the useState manipulating the activeFeature, toggeling the feature on and off
+  useEffect(() => {
+    layer?.on("change", loadFeatures);
+    loadFeatures();
+    return () => {
+      layer?.un("change", loadFeatures);
+      setFeatures([]);
+    };
+  }, [layer]);
 
-
-    //setting the feature by manipulating the potential layer by adding the feature to the layer
-    function loadFeatures() {
-        setFeatures(layer?.getSource()?.getFeatures() || []);
-    }
-
-    //Change to the useState manipulating the activeFeature, toggeling the feature on and off
-    useEffect(()=> {
-        layer?.on("change", loadFeatures);
-        loadFeatures();
-        return () => {
-            layer?.un("change", loadFeatures);
-            setFeatures([]);
-        };
-    }, [layer]);
-
-
-    return {features, visibleFeatures, activeFeatures, setActiveFeature}
+  return { features, visibleFeatures, activeFeatures, setActiveFeature };
 }

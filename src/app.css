@@ -1,107 +1,113 @@
-html{
-    position: relative;
-    height: 100dvh;
-    overflow: hidden;
-    font-family: "AnonymicePro Nerd Font Propo";
-
+html {
+  position: relative;
+  height: 100dvh;
+  overflow: hidden;
+  font-family: "AnonymicePro Nerd Font Propo";
 }
 
-#root{
-    position: absolute;
-    height: 100.5%;
-    width: 100.8%;
-    left: -0.6%;
-    top: 0.1%;
-    overflow: hidden;
-    background-color: #080808;
+#root {
+  position: absolute;
+  height: 100.5%;
+  width: 100.8%;
+  left: -0.6%;
+  top: 0.1%;
+  overflow: hidden;
+  background-color: #080808;
 }
 main {
-    display: grid;
-    position: absolute;
-    height: 100%;
-    width: 98.98%;
-    margin: 1%;
-    border-radius: 2%;
-    left: -0.5%;
-    top: -2%;
+  display: grid;
+  position: absolute;
+  height: 100%;
+  width: 98.98%;
+  margin: 1%;
+  border-radius: 2%;
+  left: -0.5%;
+  top: -2%;
 }
-.district-overlay{
-    position: absolute;
-    border-color: black;
-    border-style: solid;
-    border-width: 2px;
-    text-align: center;
-    background-color: #242424;
-    font-size:initial;
-    color: #2dc316;
-
-
+.district-overlay {
+  position: absolute;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  text-align: center;
+  background-color: #242424;
+  font-size: initial;
+  color: #2dc316;
 }
-.form-control{
-    background-color: #242424;
-    color: #00ff15;
+.form-control {
+  background-color: #242424;
+  color: #00ff15;
 }
 
-.mylocation{
-    position: absolute;
-    left: 2%;
-    top: 85%;
-    z-index: 3;
-    background-color: #242424;
-    border-width: 2px;
-    border-color: #242424;
-    border-style: solid;
-    color: #00ff15;
-    padding: 2px;
-    border-radius: 5%;
-
-
-}
-.zoomOut{
-    position: absolute;
-    left: 2%;
-    top: 90%;
-    z-index: 3;
-    background-color: #242424;
-    border-width: 2px;
-    border-color: #242424;
-    border-style: solid;
-    color: #00ff15;
-    padding: 2px;
-    border-radius: 5%;
+.mylocation {
+  position: absolute;
+  left: 2%;
+  top: 85%;
+  z-index: 3;
+  background-color: #242424;
+  border-width: 2px;
+  border-color: #242424;
+  border-style: solid;
+  color: #00ff15;
+  padding: 2px;
+  border-radius: 5%;
 }
 
-label{
-    color: #00ff15;
+.zoomOut {
+  position: absolute;
+  left: 2%;
+  top: 90%;
+  z-index: 3;
+  background-color: #242424;
+  border-width: 2px;
+  border-color: #242424;
+  border-style: solid;
+  color: #00ff15;
+  padding: 2px;
+  border-radius: 5%;
 }
 
-option{
-    color: green;
-}
-select{
-    color:green;
-    background-color: #171919;
-}
-nav{
-    gap: 5em;
-    color: blue;
-    border-width: 2px;
-    border-color: #667f61;
-    border-style: solid;
-    position: absolute;
-    left: 15.5%;
-    height: auto;
-    top: 1%;
-
-    z-index: 1;
-    background-color: #242424;
+label {
+  color: #00ff15;
 }
 
+option {
+  color: green;
+}
+select {
+  color: green;
+  background-color: #171919;
+}
+nav {
+  gap: 5em;
+  color: blue;
+  border-width: 2px;
+  border-color: #667f61;
+  border-style: solid;
+  position: absolute;
+  left: 15.5%;
+  height: auto;
+  top: 1%;
+
+  z-index: 1;
+  background-color: #242424;
+}
+.rowTest {
+  position: absolute;
+  z-index: 2;
+  color: blue;
+  left: 70%;
+  top: 50%;
+}
 
 .ol-layer {
-    /* filter:  sepia(30%) brightness(60%) contrast(200%);*/
-    filter: contrast(130%) brightness(100%) saturate(280%) ;
-    border-radius: 2%;
+  /* filter:  sepia(30%) brightness(60%) contrast(200%);*/
+  filter: contrast(130%) brightness(100%) saturate(250%);
+  border-radius: 2%;
+}
+.minimap.minimap {
+  filter: contrast(100%) brightness(100%) saturate(1000%) grayscale(100%)
+    invert();
 }
 /*
 .ol-unselectable.ol-control{
@@ -113,78 +119,69 @@ nav{
     border-color: #00ff15;
 }*/
 
-button.ol-zoom-in, button.ol-zoom-out{
-    background-color: rgba(137, 68, 19, 0.10);
-    color: green;
-    border-style: solid;
-    border-radius: 50%;
-
-
+button.ol-zoom-in,
+button.ol-zoom-out {
+  background-color: rgba(137, 68, 19, 0.1);
+  color: green;
+  border-style: solid;
+  border-radius: 50%;
 }
-div.ol-zoom.ol-unselectable.ol-control{
-    position: relative;
-    top: 80%;
-    left: 1.8%;
-
+div.ol-zoom.ol-unselectable.ol-control {
+  position: relative;
+  top: 80%;
+  left: 1.8%;
 }
 
-.ol-viewport{
-    border-style: solid;
-    border-color: saddlebrown;
-    border-width: 2px;
-    border-radius: 1%;
+.ol-viewport {
+  border-style: solid;
+  border-color: saddlebrown;
+  border-width: 2px;
+  border-radius: 1%;
 }
-div.ol-attribution{
-    visibility: hidden;
-    z-index: -3;
-
+div.ol-attribution {
+  visibility: hidden;
+  z-index: -3;
 }
-.ol-rotate-reset{
-    visibility: hidden;
-    z-index: -3;
-}
-
-.searchShelter{
-    position: absolute;
-    left: 1%;
-   width: 14%;
-    top: 1%;
-    overflow: hidden;
-    z-index: 1;
-    background-color: #242424;
-    border-width: 2px;
-    border-color: #242424;
-    border-style: solid;
-    border-radius: 1%;
-
-
+.ol-rotate-reset {
+  visibility: hidden;
+  z-index: -3;
 }
 
+.searchShelter {
+  position: absolute;
+  left: 1%;
+  width: 14%;
+  top: 1%;
+  overflow: hidden;
+  z-index: 1;
+  background-color: #242424;
+  border-width: 2px;
+  border-color: #242424;
+  border-style: solid;
+  border-radius: 1%;
+}
 
 .search-container {
-    flex-direction: column;
-    color: #00ff15;
-    margin: 1%
-
-
+  flex-direction: column;
+  color: #00ff15;
+  margin: 1%;
 }
 
-.ol-scale-line-inner{
-    color: green;
-    font-size: large;
-    border-width: 2px;
-    border-color: #242424;
+.ol-scale-line-inner {
+  color: green;
+  font-size: large;
+  border-width: 2px;
+  border-color: #242424;
 
-    border-style: solid;
-    border-radius: 50%;
-    text-align: center;
-    height: fit-content;
-    padding: 4px;
-    background-color: rgba(36, 36, 36, 0.61);
-    left: 82%;
-    top: 92%;
-    position: absolute;
-
+  border-style: solid;
+  border-radius: 50%;
+  text-align: center;
+  height: fit-content;
+  padding: 4px;
+  background-color: rgba(36, 36, 36, 0.61);
+  left: 82%;
+  top: 92%;
+  position: absolute;
 }
 
 /*button{
@@ -192,68 +189,54 @@ div.ol-attribution{
     background-color: #080808;
     font-family: "AnonymicePro Nerd Font Propo";
 }*/
-.searchinput{
-    background-color: black;
-    color: #00ff15;
-    width: 96.4%;
-
-
-
-
-
+.searchinput {
+  background-color: black;
+  color: #00ff15;
+  width: 96.4%;
 }
 .dropdown {
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid grey;
-    width: auto;
-
-
-
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  width: auto;
 }
 
 .dropdown:empty {
-    border: none;
+  border: none;
 }
 
 .dropdown-row {
-    cursor:pointer;
-    text-align: start;
-    margin: 2px 0;
-    color: #00ff15;
-
+  cursor: pointer;
+  text-align: start;
+  margin: 2px 0;
+  color: #00ff15;
 }
 
 search-inner {
-    display: flex;
-
-
-
+  display: flex;
 }
 
-.mapSelector{
-    position: absolute;
-    left: 75%;
-    top: 1.1%;
-    z-index: 3;
-    background-color: #242424;
-    width: auto;
-    border-width: 2px;
-    border-color: #242424;
-    border-style: solid;
-
-
+.mapSelector {
+  position: absolute;
+  left: 75%;
+  top: 1.1%;
+  z-index: 3;
+  background-color: #242424;
+  width: auto;
+  border-width: 2px;
+  border-color: #242424;
+  border-style: solid;
 }
 
-.row{
-    z-index: 2;
-    position: absolute;
-    top: 1%;
-    left: 40%;
-    width: fit-content;
-    background-color: #171919;
-    border-width: 2px;
-    border-color: #242424;
-    border-style: solid;
+.row {
+  z-index: 2;
+  position: absolute;
+  top: 1%;
+  left: 40%;
+  width: fit-content;
+  background-color: #171919;
+  border-width: 2px;
+  border-color: #242424;
+  border-style: solid;
 }
